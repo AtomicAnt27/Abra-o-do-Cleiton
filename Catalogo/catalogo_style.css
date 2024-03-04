@@ -64,7 +64,7 @@ h2{
     text-align: center;
 }
 
-.cardapio_title{
+.catalogo_title{
     font-family: 'HylianSerif';
 }
 
@@ -118,8 +118,8 @@ h2{
 }
 
 .card{
-    width: 18rem;
-    height: 25rem;
+    width: 14rem;
+    height: 20rem;
     border-radius: 10px !important; 
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }

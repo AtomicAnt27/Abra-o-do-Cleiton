@@ -1,17 +1,16 @@
+function muda_catalogo(n) {
+    var catalogos = document.querySelectorAll('.catalogo');
 
-function muda_cardapio(n) {
-    var cardapios = document.querySelectorAll('.cardapio');
-
-    cardapios.forEach(cardapio => {
-        cardapio.classList.add('hidden');
+    catalogos.forEach(catalogo => {
+        catalogo.classList.add('hidden');
     });
 
-    cardapios[n].classList.remove('hidden');
+    catalogos[n].classList.remove('hidden');
 }
 
 function refresh(){
-    var cardapios = document.querySelectorAll('.cardapio');
-    cardapios.forEach(cardapio => {
-        cardapio.classList.remove('hidden');
+    var catalogos = document.querySelectorAll('.o');
+    catalogos.forEach(catalogo => {
+        catalogo.classList.remove('hidden');
     });
 }
