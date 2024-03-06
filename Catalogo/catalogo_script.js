@@ -9,7 +9,7 @@ function muda_catalogo(n) {
 }
 
 function refresh(){
-    var catalogos = document.querySelectorAll('.o');
+    var catalogos = document.querySelectorAll('.catalogo');
     catalogos.forEach(catalogo => {
         catalogo.classList.remove('hidden');
     });
