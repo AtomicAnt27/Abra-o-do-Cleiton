@@ -100,7 +100,7 @@ a:hover{
     justify-content: center;
     border-radius: 10px;
     border: 1px solid;
-    background-color: rgb(230, 14, 47);
+    background-color:hwb(295 71% 0%);
     color: rgb(15, 0, 2);
     font-size: 1.4rem;
     text-align: center;
@@ -110,7 +110,7 @@ a:hover{
     padding: 5px;
     border: none;
     border-radius: 10px;
-    color: rgb(97, 26, 26);
+    color: rgb(0, 0, 0);
 }
 
 @media (width< 1024px){   
@@ -138,6 +138,8 @@ footer {
     gap: 3rem;
     padding:5vh;
     justify-content: center;
+  
+    align-items: center;
   }
   
   .footer {
@@ -145,4 +147,7 @@ footer {
     align-items: center;
     color: white;
     padding-top: 1rem;
+    /* margin-top: 3rem; */
+    bottom: 0;
+    z-index: 3000;
   }
