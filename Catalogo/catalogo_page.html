@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo</title>
-    
-    <link rel="stylesheet" href="catalogo_style.css"/>
+
+    <link rel="stylesheet" href="catalogo_style.css" />
     <script src="catalogo_script.js"></script>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header class="header">
-        <ul>
-            <li><a href="../Menu/menu_page.html">Menu</a></li>
-            <li><a href="../Catalogo/catalogo_page.html">Catálogo</a></li>
-            <li><a href="../Pedido/pedido_page.html">Pedido</a></li>
-        </ul>
+    <header>
+        <nav class="menu-hamburger">
+
+            <input id="menu-hamburguer" type="checkbox" />
+            <label for="menu-hamburguer">
+                <div class="menu">
+                    <span class="hamburguer"></span>
+                </div>
+            </label>
+
+            <ul class="menu-hamburguer-elements show">
+                <li><a href="../Menu/menu_page.html">Menu</a></li>
+                <li><a href="../Catalogo/catalogo_page.html">Catálogo</a></li>
+                <li><a href="../Pedido/pedido_page.html">Pedido</a></li>
+            </ul>
+        </nav>
         <div class="logo_wrap" style="text-align: center;">
             <img class="logo_img" src="../Imagens/Logo_Crystallo.png" alt="logo">
         </div>
@@ -32,22 +47,28 @@
         <div class="content">
             <h1 class="catalogo_title">CATÁLOGO</h1>
             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                <input onclick="refresh()" type="radio" class="btn-check" name="catalogo" id="btnradio0" autocomplete="off" checked>
+                <input onclick="refresh()" type="radio" class="btn-check" name="catalogo" id="btnradio0"
+                    autocomplete="off" checked>
                 <label class="btn btn-outline-dark" for="btnradio0">+</label>
 
-                <input onclick="muda_catalogo(0)" type="radio" class="btn-check" name="catalogo" id="btnradio1" autocomplete="off">
+                <input onclick="muda_catalogo(0)" type="radio" class="btn-check" name="catalogo" id="btnradio1"
+                    autocomplete="off">
                 <label class="btn btn-outline-dark" for="btnradio1">Artesanatos</label>
-            
-                <input onclick="muda_catalogo(1)" type="radio" class="btn-check" name="catalogo" id="btnradio2" autocomplete="off">
+
+                <input onclick="muda_catalogo(1)" type="radio" class="btn-check" name="catalogo" id="btnradio2"
+                    autocomplete="off">
                 <label class="btn btn-outline-dark" for="btnradio2">Gemas Brutas</label>
-            
-                <input onclick="muda_catalogo(2)" type="radio" class="btn-check" name="catalogo" id="btnradio3" autocomplete="off">
+
+                <input onclick="muda_catalogo(2)" type="radio" class="btn-check" name="catalogo" id="btnradio3"
+                    autocomplete="off">
                 <label class="btn btn-outline-dark" for="btnradio3">Gemas Lapidadas</label>
-                
-                <input onclick="muda_catalogo(3)" type="radio" class="btn-check" name="catalogo" id="btnradio4" autocomplete="off">
+
+                <input onclick="muda_catalogo(3)" type="radio" class="btn-check" name="catalogo" id="btnradio4"
+                    autocomplete="off">
                 <label class="btn btn-outline-dark" for="btnradio4">Geodos</label>
-                
-                <input onclick="muda_catalogo(4)" type="radio" class="btn-check" name="catalogo" id="btnradio5" autocomplete="off">
+
+                <input onclick="muda_catalogo(4)" type="radio" class="btn-check" name="catalogo" id="btnradio5"
+                    autocomplete="off">
                 <label class="btn btn-outline-dark" for="btnradio5">Roladas</label>
             </div>
 
@@ -99,7 +120,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="catalogo">
 
                 <h2>Gemas Brutas</h2>
@@ -148,7 +169,7 @@
                     </div>
                 </div>
             </div>
-        
+
             <div class="catalogo">
 
                 <h2>Gemas Lapidadas</h2>
@@ -197,7 +218,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="catalogo">
 
                 <h2>Geodos</h2>
@@ -246,7 +267,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="catalogo">
 
                 <h2>Rolados</h2>
@@ -296,17 +317,17 @@
                 </div>
             </div>
         </div>
+        <footer class="footer" id="footer">
+            <div class="footer-container">
+                <img src="../Imagens/Crystallo.png" height="150" width="150">
+                <br>
+                <span id="footer_copyright"></span>
+                <script>
+                    document.querySelector("#footer_copyright").innerHTML = "Copyright &copy; %YEAR% Pedro da Fonseca Schwertner & Ester Rafaela Boldt. Todos os direitos reservados.".replace('%YEAR%', new Date().getFullYear())
+                </script>
+            </div>
+        </footer>
     </div>
-
-    <footer>
-        <div class="footer">
-            <img src="../Imagens/Crystallo.png" height="200" width="200">
-          <span id="footer_copyright"></span>
-          <script>
-            document.querySelector("#footer_copyright").innerHTML = "Copyright &copy; %YEAR% Pedro da Fonseca Schwertner & Ester Rafaela Boldt. Todos os direitos reservados.".replace('%YEAR%', new Date().getFullYear())
-          </script>
-        </div>
-    </footer>
-
 </body>
+
 </html>

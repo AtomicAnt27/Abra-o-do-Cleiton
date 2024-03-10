@@ -38,6 +38,10 @@ function calcularTotal(){
     var rolados = 0;
 
     switch(selectArtesanatos.value){
+        case "...":
+            total += 0;
+            artesanatos = 0;
+            break;
         case "Árvore de Ametista":
             total += 69,90;
             artesanatos = 69,90;
@@ -65,6 +69,10 @@ function calcularTotal(){
     }
 
     switch(selectGemasBrutas.value){
+        case "...":
+            total += 0;
+            gamesBrutas = 0;
+            break;
         case "Ametista":
             total += 11,90;
             gemasBrutas = 11,90;
@@ -92,6 +100,10 @@ function calcularTotal(){
     }
 
     switch(selectGemasLapidadas.value){
+        case "...":
+            total += 0;
+            gemasLapidadas = 0;
+            break;
         case "Ametista":
             total += 99,90;
             gemasLapidadas = 99,90;
@@ -119,6 +131,10 @@ function calcularTotal(){
     }
 
     switch(selectGeodos.value){
+        case "...":
+            total += 0;
+            geodos = 0;
+            break;
         case "Ametista":
             total += 49,90;
             geodos = 49,90;
@@ -146,6 +162,10 @@ function calcularTotal(){
     }
 
     switch(selectRolados.value){
+        case "...":
+            total += 0;
+            rolados = 0;
+            break;
         case "Ametista":
             total += 19,90;
             rolados = 19.90;
@@ -194,3 +214,25 @@ const limpar = () => {
     document.getElementById("geodo-pronto").textContent = "";
     document.getElementById("roloado-pronto").textContent = "";
 }
+
+var totalPedido = document.getElementById("resultado");
+
+const fazerPedido = () => {
+    var numTel = "5"
+    var idPedido = parseInt(Math.random() * 1000);
+    
+
+    var linkWhatsApp = "https://wa.me/" + numTel + "?text=Pedido Número: " + idPedido;
+    window.open(linkWhatsApp, "_blank");
+}
+
+var menuButton = document.getElementById("menu-button");
+var menu = document.getElementById("menu");
+
+menuButton.addEventListener("click", function() {
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+});

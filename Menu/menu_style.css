@@ -26,10 +26,11 @@ img {
 }
 
 h1 {
-    font-size: 5.3rem;
+    font-size: 4rem;
     color: #ffffff;
     cursor: pointer;
     transition: all 100ms ease;
+    gap: 3rem;
 }
 
 h1:hover {
