@@ -44,28 +44,28 @@ function calcularTotal(){
             artesanatos = 0;
             break;
         case "Árvore de Ametista":
-            total += 69,90;
-            artesanatos = 69,90;
+            total += 69.90;
+            artesanatos = 69.90;
             break;
         case "Árvore de Citrino":
-            total += 69,90;
-            artesanatos = 69,90;
+            total += 69.90;
+            artesanatos = 69.90;
             break;
         case "Brinco de Jade":
-            total += 89,90;
-            artesanatos = 89,90;
+            total += 89.90;
+            artesanatos = 89.90;
             break;
         case "Pássaro Lápis-Lazúli":
-            total += 323,90;
-            artesanatos = 323,90;
+            total += 323.90;
+            artesanatos = 323.90;
             break;
         case "Colar Opala de Fogo":
-            total += 349,90;
-            artesanatos = 349,90;
+            total += 349.90;
+            artesanatos = 349.90;
             break;
         case "Pulseira Turmalina Melancia":
-            total += 129,90;
-            artesanatos = 129,90;
+            total += 129.90;
+            artesanatos = 129.90;
             break;
     }
 
@@ -75,28 +75,28 @@ function calcularTotal(){
             gamesBrutas = 0;
             break;
         case "Ametista":
-            total += 11,90;
-            gemasBrutas = 11,90;
+            total += 11.90;
+            gemasBrutas = 11.90;
             break;
         case "Citrino":
-            total += 11,90;
-            gemasBrutas = 11,90;
+            total += 11.90;
+            gemasBrutas = 11.90;
             break;
         case "Jade":
-            total += 18,90;
-            gemasBrutas = 18,90;
+            total += 18.90;
+            gemasBrutas = 18.90;
             break;
         case "Lápis-Lazúli":
-            total += 11,90;
-            gemasBrutas = 11,90;
+            total += 11.90;
+            gemasBrutas = 11.90;
             break;
         case "Opala de Fogo":
-            total += 39,90;
-            gemasBrutas = 39,90;
+            total += 39.90;
+            gemasBrutas = 39.90;
             break;
         case "Turmalina Melancia":
-            total += 59,90;
-            gemasBrutas = 59,90;
+            total += 59.90;
+            gemasBrutas = 59.90;
             break;
     }
 
@@ -106,28 +106,28 @@ function calcularTotal(){
             gemasLapidadas = 0;
             break;
         case "Ametista":
-            total += 99,90;
-            gemasLapidadas = 99,90;
+            total += 99.90;
+            gemasLapidadas = 99.90;
             break;
         case "Citrino":
-            total += 110,90;
-            gemasLapidadas = 110,90;
+            total += 110.90;
+            gemasLapidadas = 110.90;
             break;
         case "Jade":
-            total += 149,90;
-            gemasLapidadas = 149,90;
+            total += 149.90;
+            gemasLapidadas = 149.90;
             break;
         case "Lápis-Lazúli":
-            total += 59,90;
-            gemasLapidadas = 59,90;
+            total += 59.90;
+            gemasLapidadas = 59.90;
             break;
         case "Opala de Fogo":
-            total += 80,90;
+            total += 80.90;
             gemasLapidadas = 80.90;
             break;
         case "Turmalina Melancia":
-            total += 89,90;
-            gemasLapidadas = 89,90;
+            total += 89.90;
+            gemasLapidadas = 89.90;
             break;
     }
 
@@ -137,28 +137,28 @@ function calcularTotal(){
             geodos = 0;
             break;
         case "Ametista":
-            total += 49,90;
-            geodos = 49,90;
+            total += 49.90;
+            geodos = 49.90;
             break;
         case "Citrino":
-            total += 535,49;
-            geodos = 535,49;
+            total += 535.49;
+            geodos = 535.49;
             break;
         case "Jade":
-            total += 69,90;
-            geodos = 69,90;
+            total += 69.90;
+            geodos = 69.90;
             break;
         case "Lápis-Lazúli":
-            total += 34,90;
-            geodos = 34,90;
+            total += 34.90;
+            geodos = 34.90;
             break;
         case "Opala de Fogo":
-            total += 39,90;
-            geodos = 39,90;
+            total += 39.90;
+            geodos = 39.90;
             break;
         case "Turmalina Melancia":
-            total += 39,90;
-            geodos = 39,90;
+            total += 39.90;
+            geodos = 39.90;
             break;
     }
 
