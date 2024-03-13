@@ -1,3 +1,4 @@
+var total = 0;
 
 function comecar(){
     var name = document.getElementById("exampleFormControlInput1").value;
@@ -30,7 +31,7 @@ function calcularTotal(){
     var selectRolados = document.getElementById("select_rolados");
     var resultadoSpan = document.getElementById("resultado");
 
-    var total = 0;
+    total = 0;
     var artesanatos = 0;
     var gemasBrutas = 0;
     var gemasLapidadas = 0;
@@ -167,28 +168,28 @@ function calcularTotal(){
             rolados = 0;
             break;
         case "Ametista":
-            total += 19,90;
+            total += 19.90;
             rolados = 19.90;
             break;
         case "Citrino":
-            total += 19,90;
-            rolados = 19,90;
+            total += 19.90;
+            rolados = 19.90;
             break;
         case "Jade":
-            total += 29,90;
-            rolados = 29,90;
+            total += 29.90;
+            rolados = 29.90;
             break;
         case "Lápis-Lazúli":
-            total += 19,90;
-            rolados = 19,90;
+            total += 19.90;
+            rolados = 19.90;
             break;
         case "Opala de Fogo":
-            total += 29,90;
-            rolados = 29,90;
+            total += 29.90;
+            rolados = 29.90;
             break;
         case "Turmalina Melancia":
-            total += 24,90;
-            rolados = 24,90;
+            total += 24.90;
+            rolados = 24.90;
             break;
     }
 
@@ -213,6 +214,8 @@ const limpar = () => {
     document.getElementById("gemalapidada-pronto").textContent = "";
     document.getElementById("geodo-pronto").textContent = "";
     document.getElementById("roloado-pronto").textContent = "";
+    total = 0;
+    
 }
 
 var totalPedido = document.getElementById("resultado");
@@ -220,9 +223,10 @@ var totalPedido = document.getElementById("resultado");
 const fazerPedido = () => {
     var numTel = "5"
     var idPedido = parseInt(Math.random() * 1000);
-    
+    let data = new Date();
+    let dataFormatada = ((data.getDate())) + "/" + ((data.getMonth() + 1)) + "/" + data.getFullYear() + " " + data.getHours() + ":" + data.getMinutes();
 
-    var linkWhatsApp = "https://wa.me/" + numTel + "?text=Pedido Número: " + idPedido;
+    var linkWhatsApp = "https://wa.me/" + numTel + "?text=Pedido Número: " + idPedido + "%0a" + " / Total: R$" + total + "%0a" + " / Data: " + dataFormatada;
     window.open(linkWhatsApp, "_blank");
 }
 
